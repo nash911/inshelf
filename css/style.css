@@ -98,6 +98,11 @@
     color: var(--bs-light) !important;
 }
 
+/* Remove Login and Signup Buttons */
+.navbar-nav .btn {
+    display: none;
+}
+
 .RotateMoveLeft {
     position: relative;
     animation: RotateMoveLeft 10s linear infinite;
@@ -129,6 +134,12 @@
     font-weight: 400;
     outline: none;
     transition: .5s;
+}
+
+/* Remove Pages and Contact Us from Navbar */
+.navbar-light .navbar-nav .nav-item.dropdown,
+.navbar-light .navbar-nav .nav-item .nav-link[href="contact.html"] {
+    display: none;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -298,7 +309,6 @@
     z-index: 2;
 }
 
-
 @keyframes RotateMoveSingle {
     0% {
         -webkit-transform: rotateZ(0deg) rotate(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
@@ -354,7 +364,6 @@
     color: var(--bs-dark) !important;
 }
 
-
 .breadcrumb-animation {
     position: absolute;
     top: 0;
@@ -382,7 +391,6 @@
     height: 80px;
     animation-delay: 0s;
 }
-
 
 .breadcrumb-animation li:nth-child(2) {
     left: 10%;
@@ -652,7 +660,6 @@
     border: 1px ;
 }
 
-
 .service .service-item:hover .service-icon,
 .service .service-item:hover a {
     background: var(--bs-white) !important;
@@ -666,6 +673,11 @@
 /* Custom Icon Styling */
 .service-icon {
     position: relative;
+    color: var(--bs-primary) !important;
+}
+
+.service-icon .fas {
+    color: var(--bs-primary) !important;
 }
 
 .custom-overlay-icon {
@@ -673,8 +685,8 @@
     top: 35%;
     left: 55%;
     transform: translate(-50%, -50%);
+    color: var(--bs-secondary) !important;
 }
-
 /*** Service End ***/
 
 
@@ -682,6 +694,11 @@
 .feature .feature-img {
     background: var(--bs-light);
     border-radius: 58% 42% 21% 79% / 30% 29% 71% 70%;
+}
+
+/* Icon color in Features section */
+.feature .d-inline-block.rounded.bg-light.p-4.mb-4 i {
+    color: var(--bs-primary) !important;
 }
 /*** Features End ***/
 
@@ -747,7 +764,6 @@
     background: rgba(0, 0, 0, .4);
 }
 
-
 .blog .blog-item .blog-content {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -770,48 +786,10 @@
     overflow: hidden;
     z-index: 1;
 }
-.testimonial::after {
-    content: "";
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    background: url(../img/testimonial-img-2.jpg) center center no-repeat;
-    animation: TestimonialMoveLeft 100s linear infinite;
-    z-index: -1;
 
-}
-
+.testimonial::after,
 .testimonial::before {
-    content: "";
-    position: absolute;
-    top: 30%;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    background: url(../img/testimonial-img-3.jpg) center center no-repeat;
-    animation: TestimonialMoveRight 100s linear infinite;
-    z-index: -1;
-
-}
-
-@keyframes TestimonialMoveLeft {
-    0%   {left: 0px;}
-    25%   {top: 100px;}
-    50%   {left: 100%;}
-    75%   {top: 80%;}
-    100%  {left: 0px;}
-}
-
-@keyframes TestimonialMoveRight {
-    0%   {right: 0px;}
-    25%   {top: 100px;}
-    50%   {right: 100%;}
-    75%   {top: 80%;}
-    100%  {right: 0px;}
+    display: none;
 }
 
 .testimonial .testimonial-carousel.owl-carousel {
@@ -852,13 +830,11 @@
     transition: 0.5s;
 }
 
-
 .testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--bs-primary);
     color: var(--bs-white) !important;
 }
-
 
 .testimonial-carousel .owl-dots {
     width: 100%;
@@ -970,6 +946,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .footer .footer-item a {
     line-height: 35px;
     color: var(--bs-dark);
@@ -984,12 +961,17 @@
     letter-spacing: 2px;
     color: var(--bs-primary);
 }
-
 /*** Footer End ***/
+
 
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
+}
+
+/* Remove "Designed By HTML Codex" */
+.copyright div.col-md-6.text-center.text-md-end.text-white {
+    display: none;
 }
 /*** copyright end ***/
