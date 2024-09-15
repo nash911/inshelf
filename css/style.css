@@ -253,7 +253,7 @@
         background: transparent !important;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: var(--bs-light) !important;
@@ -368,7 +368,7 @@
     background: rgba(102, 16, 242, 0.07);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
 .breadcrumb-animation li:nth-child(1) {
@@ -534,7 +534,7 @@
     animation: RotateMoveSty-3 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
-    
+
 }
 
 @keyframes RotateMoveSty-3 {
@@ -560,7 +560,7 @@
     animation: RotateMoveSty-4 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
-    
+
 }
 
 @keyframes RotateMoveSty-4 {
@@ -620,13 +620,13 @@
 @media (max-width: 992px) {
     .hero-header {
         padding-top: 280px;
-        
+
     }
 
     .hero-header .rotate-img img {
         margin-top: 100px;
     }
-   
+
 }
 /*** Hero Header End ***/
 
@@ -658,6 +658,17 @@
     color: var(--bs-white);
 }
 
+/* Custom Icon Styling */
+.service-icon {
+    position: relative;
+}
+
+.custom-overlay-icon {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
 /*** Service End ***/
 
 
