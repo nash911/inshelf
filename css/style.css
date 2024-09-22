@@ -27,8 +27,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 .back-to-top {
     position: fixed;
     right: 30px;
@@ -707,6 +705,94 @@ html {
     color: var(--bs-primary) !important;
 }
 /*** Features End ***/
+
+/*** How It Works Start ***/
+.how-it-works {
+    background-color: var(--bs-light);
+}
+
+.steps-vertical {
+    position: relative;
+    margin-left: 40px; /* Adjust as needed */
+    padding-left: 40px; /* For the vertical line space */
+}
+
+.steps-vertical::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--bs-primary);
+}
+
+.step-item {
+    position: relative;
+    margin-bottom: 50px; /* Space between steps */
+}
+
+.step-number {
+    position: absolute;
+    left: -40px; /* Position to the left of the line */
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.step-item::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--bs-primary);
+}
+
+/* .step-item:last-child::before {
+    height: 0;
+} */
+
+.step-content {
+    padding-left: 30px;
+}
+
+.step-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bs-dark);
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 16px;
+    color: var(--bs-dark);
+}
+
+/* Adjust for mobile responsiveness */
+@media (max-width: 576px) {
+    .steps-vertical {
+        margin-left: 20px;
+    }
+
+    .step-number {
+        left: -30px;
+    }
+
+    .step-content {
+        padding-left: 20px;
+    }
+}
+/*** How It Works End ***/
 
 
 /*** Pricing Start ***/
