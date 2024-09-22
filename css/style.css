@@ -954,6 +954,34 @@ html {
 } */
 /*** Testimonial End ***/
 
+/* Bottom Section Styling */
+/* #bottom-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#bottom-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--bs-dark);
+}
+
+#bottom-section p {
+    font-size: 1rem;
+    color: var(--bs-dark);
+} */
+
+/* Adjust alignment for smaller screens */
+/* @media (max-width: 992px) {
+    #bottom-section .row {
+        flex-direction: column;
+    }
+
+    #bottom-section .col-lg-6 {
+        max-width: 100%;
+    }
+} */
+
 
 /*** Contact Start ***/
 .contact {
