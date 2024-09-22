@@ -107,28 +107,6 @@ html {
     display: none;
 }
 
-.RotateMoveLeft {
-    position: relative;
-    animation: RotateMoveLeft 10s linear infinite;
-}
-
-.RotateMoveRight {
-    position: relative;
-    animation: RotateMoveLeft 10s linear infinite;
-}
-
-@keyframes RotateMoveLeft {
-    0%   {left: 0px;}
-    50%   {left: 40px;}
-    100%  {left: 0px;}
-}
-
-@keyframes RotateMoveRight {
-    0%   {right: 0px;}
-    50%   {right: 40px;}
-    100%  {right: 0px;}
-}
-
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     margin-right: 25px;
@@ -796,7 +774,7 @@ html {
 
 
 /*** Pricing Start ***/
-.price .price-item {
+/* .price .price-item {
     position: relative;
     overflow: hidden;
     transition: 0.5s;
@@ -820,12 +798,12 @@ html {
     align-items: end;
     justify-content: center;
     padding-bottom: 10px;
-}
+} */
 /*** Pricing End ***/
 
 
 /*** Blog Start ***/
-.blog .blog-item {
+/* .blog .blog-item {
     border-radius: 10px;
 }
 
@@ -867,12 +845,12 @@ html {
 
 .blog .blog-item .blog-img:hover img {
     transform: scale(1.3);
-}
+} */
 /*** Blog End ***/
 
 
 /*** Testimonial Start ***/
-.testimonial {
+/* .testimonial {
     position: relative;
     background: var(--bs-light);
     overflow: hidden;
@@ -973,7 +951,7 @@ html {
         margin-top: -250px;
         margin-right: -15px;
     }
-}
+} */
 /*** Testimonial End ***/
 
 
