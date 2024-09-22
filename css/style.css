@@ -119,10 +119,10 @@ html {
 }
 
 /* Remove Pages and Contact Us from Navbar */
-.navbar-light .navbar-nav .nav-item.dropdown,
+/* .navbar-light .navbar-nav .nav-item.dropdown,
 .navbar-light .navbar-nav .nav-item .nav-link[href="contact.html"] {
     display: none;
-}
+} */
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
@@ -270,13 +270,14 @@ html {
     }
 }
 
-/* Adjust logo size on smaller screens */
-@media (max-width: 576px) {
-    .navbar-brand img {
-        max-height: 40px;
-    }
+/* Adjust spacing between navbar items */
+.navbar-nav .nav-item {
+    margin-right: 25px;
 }
 
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
