@@ -118,6 +118,25 @@ html {
     transition: .5s;
 }
 
+/*** Navbar Title Styling ***/
+.navbar-brand .navbar-title {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 22px; /* Adjust between 20-24px as desired */
+    font-weight: 600; /* Semi-bold for prominence */
+    color: #27ae60; /* Ecological Green */
+    margin-left: 0.5em;
+    letter-spacing: 0.5px; /* Slight kerning adjustment */
+}
+
+@media (max-width: 992px) {
+    .navbar-brand .navbar-title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+
 /* Remove Pages and Contact Us from Navbar */
 /* .navbar-light .navbar-nav .nav-item.dropdown,
 .navbar-light .navbar-nav .nav-item .nav-link[href="contact.html"] {
