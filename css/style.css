@@ -645,6 +645,15 @@ html {
 }
 /*** Hero Header End ***/
 
+/*** Justify Text in Our Services Section ***/
+/* #services p {
+    text-align: justify;
+} */
+
+/*** Justify Text in Service Item Descriptions ***/
+.service-content p {
+    text-align: justify;
+}
 
 /*** Service Start ***/
 .service .service-item {
@@ -703,6 +712,11 @@ html {
     color: var(--bs-primary) !important;
 }
 /*** Features End ***/
+
+/*** Justify Text in Feature Item Descriptions ***/
+.feature-content p {
+    text-align: justify;
+}
 
 /*** How It Works Start ***/
 .how-it-works {
