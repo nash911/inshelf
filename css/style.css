@@ -823,6 +823,22 @@ html {
         padding-left: 20px;
     }
 }
+
+/*** Vertical Line for Desktop ***/
+@media (min-width: 768px) {
+    .vertical-line {
+        display: block;
+        /* Existing styles */
+    }
+}
+
+/*** Hide Lines on Mobile ***/
+@media (max-width: 767px) {
+    .vertical-line {
+        display: none;
+    }
+}
+
 /*** How It Works End ***/
 
 
