@@ -783,14 +783,14 @@ html {
     content: '';
     position: absolute;
     left: 20px;
-    top: 0;
+    top: 40px; /* Start line below the step number */
     width: 4px;
-    height: 100%;
+    height: calc(100% - 40px); /* Adjust line height */
     background-color: var(--bs-primary);
 }
 
 /* .step-item:last-child::before {
-    height: 0;
+    display: none; /* Hide line after the last step /
 } */
 
 .step-content {
@@ -812,34 +812,34 @@ html {
 /* Adjust for mobile responsiveness */
 @media (max-width: 576px) {
     .steps-vertical {
-        margin-left: 20px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .steps-vertical::before {
+        display: none; /* Hide main vertical line */
+    }
+
+    .step-item {
+        margin-bottom: 30px; /* Reduce space between steps */
     }
 
     .step-number {
-        left: -30px;
+        position: static; /* Remove absolute positioning */
+        margin: 0 auto 10px; /* Center the step number */
+    }
+
+    .step-item::before {
+        display: none; /* Hide the line within each step */
     }
 
     .step-content {
-        padding-left: 20px;
+        padding-left: 0;
+        text-align: center; /* Center align text */
     }
 }
-
-/*** Vertical Line for Desktop ***/
-@media (min-width: 768px) {
-    .vertical-line {
-        display: block;
-        /* Existing styles */
-    }
-}
-
-/*** Hide Lines on Mobile ***/
-@media (max-width: 767px) {
-    .vertical-line {
-        display: none;
-    }
-}
-
 /*** How It Works End ***/
+
 
 
 /*** Pricing Start ***/
