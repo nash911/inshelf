@@ -1131,47 +1131,6 @@ html {
 /*** Contact End ***/
 
 
-/*** Footer Start ***/
-/* .footer {
-    background: linear-gradient(rgba(39, 174, 96, 0.05), rgba(39, 174, 96, 0.05));
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.footer .footer-item a {
-    line-height: 35px;
-    color: var(--bs-dark);
-    transition: 0.5s;
-}
-
-.footer .footer-item p {
-    line-height: 35px;
-}
-
-.footer .footer-item a:hover {
-    letter-spacing: 2px;
-    color: var(--bs-primary);
-} */
-/*** Footer End ***/
-
-/* Footer Contact Info Horizontal Alignment */
-/* .footer .footer-item.d-flex.justify-content-center.align-items-center a {
-    display: flex;
-    align-items: center;
-    color: var(--bs-dark);
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-.footer .footer-item.d-flex.justify-content-center.align-items-center a i {
-    margin-right: 8px;
-}
-
-.footer .footer-item.d-flex.justify-content-center.align-items-center a:hover {
-    color: var(--bs-primary);
-} */
-
 /* Footer Styling */
 .footer {
     background: var(--bs-light);
@@ -1184,6 +1143,8 @@ html {
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s;
+    overflow-wrap: break-word; /* Allow text to wrap */
+    word-wrap: break-word;
 }
 
 .footer .footer-links a:hover,
@@ -1206,22 +1167,36 @@ html {
     flex-wrap: wrap;
 }
 
+/* Updated Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .footer .container {
         flex-direction: column;
         align-items: center;
+        text-align: center; /* Center text content */
     }
+
     .footer .footer-links,
     .footer .footer-contact {
         margin-top: 10px;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
     }
+
     .footer .footer-links a,
     .footer .footer-contact a {
-        margin: 5px;
+        margin: 5px 0;
+        display: flex; /* Ensure flex display for alignment */
+        justify-content: center; /* Center align the content */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    /* Override margins from mx-3 class on mobile */
+    .footer .footer-link.mx-3 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
-
-
 
 
 /*** copyright Start ***/
